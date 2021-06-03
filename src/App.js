@@ -8,7 +8,6 @@ export const App = () => {
     return (
         <div className="app bg-light">
             <Header setTexts={(text) => {
-                console.log('text', text);
                 setTexts([text, ...texts])
             }}/>
             <Result texts={texts}/>

@@ -3,7 +3,6 @@ import './index.css'
 import {Text} from "../Text";
 
 export const Result = ({texts}) => {
-    console.log('texts', texts);
     return (
         <div className="result-container container container-fluid container-md bg-white mt-5">
             <h1 className="text-secondary px-3 py-5">Results: </h1>
