@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+  react-frontend:
+    container_name: send-text-frontend
+    image: send-text-frontend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - 9000:9000
+    command: npm run start
+    networks:
+      - webnet
+networks:
+  webnet:

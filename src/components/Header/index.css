@@ -1,0 +1,10 @@
+.result-container {
+    height: 70%;
+    min-height: 70%;
+    max-height: 70%;
+    overflow-y: scroll;
+}
+
+.result-container .result-text-container {
+    width: 60%;
+}
